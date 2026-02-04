@@ -1,6 +1,6 @@
 public class Vehicle {
     private String name; 
-    private int condition; 
+    protected int condition; 
     private int miles;
 
     protected static int activeCars = 0, totalCars = 0;
@@ -12,7 +12,7 @@ public class Vehicle {
         this("Honda Accord", 5, 0);
     }
 
-    // Full constructor
+    // constructor
     public Vehicle(String name, int condition, int miles) {
         this.name = name; 
         this.condition = condition;
@@ -22,7 +22,7 @@ public class Vehicle {
     }
 
     // Value calculation
-    public int getValue() {
+    public double getValue() {
         if (condition == 0) return getScrapValue();
         return base + conditionValue * condition;
     }

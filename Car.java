@@ -11,7 +11,7 @@ public class Car extends Vehicle {
 
     // Calculate current value
     @Override
-    public int getValue() {
+    public double getValue() {
         if (getCondition() == 0) {
             // If the car is damaged/towed, use scrap value
             return getScrapValue();

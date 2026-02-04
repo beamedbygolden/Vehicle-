@@ -15,7 +15,7 @@ public class Helicopter extends Vehicle {
 	}
 
     @Override
-    public int getValue() {
+    public double getValue() {
         if (getCondition() == 0) return getScrapValue();
         return super.getValue() + (maxPassengerWeight * 5000 / 1000);
     }
